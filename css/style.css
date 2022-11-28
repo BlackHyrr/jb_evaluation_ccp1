@@ -1,0 +1,541 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container-xl {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #34C6DD;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+main section {
+  padding: 2em 0;
+}
+
+.fa-solid, .fa-brands {
+  color: white;
+}
+
+nav {
+  font-family: "Bree Serif", serif;
+}
+nav a {
+  color: #34C6DD;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #E11F8F;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em 0.5em;
+}
+nav .navbar a {
+  display: block;
+}
+nav .navbar-brand {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+nav .navbar-brand img {
+  margin-left: 10px;
+  width: 50px;
+  height: auto;
+}
+nav .navbar-brand p {
+  margin: 0;
+}
+nav #navbar-toggle {
+  flex-basis: 40%;
+  max-width: 80px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  /*padding: 0.5em 1em;*/
+  background-color: #34C6DD;
+  text-align: center;
+}
+nav #navbar-collapse {
+  display: none;
+}
+nav #navbar-collapse a {
+  margin: 1em;
+}
+nav #navbar-collapse.visible {
+  display: block;
+  flex-basis: 100%;
+}
+@media screen and (min-width: 1024px) {
+  nav .navbar-brand {
+    flex-basis: 30%;
+  }
+  nav #navbar-toggle {
+    display: none;
+  }
+  nav #navbar-collapse {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media print {
+  nav nav {
+    display: none;
+  }
+}
+nav #navbar-collapse a {
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+footer {
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .footer-top {
+  padding: 20px 0;
+  background-color: #34C6DD;
+}
+footer .footer-top address {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-top article:last-child .fa-brands, footer .footer-top article:last-child .fa-solid {
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-top .container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+footer .footer-bottom {
+  background-color: #777;
+  position: relative;
+  height: 80px;
+}
+footer .footer-bottom div {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 2%;
+  bottom: 4%;
+}
+footer .footer-bottom div a {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+footer .footer-bottom div a .fa-solid {
+  position: absolute;
+  top: 31%;
+  left: 31%;
+  color: #777;
+}
+footer .footer-bottom p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#hero-section {
+  padding: 0;
+  background-image: url("../medias/img/hotel-miami-beach.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 2px #222;
+}
+#hero-section h1 {
+  font-size: 2rem;
+}
+#hero-section p {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  #hero-section h1 {
+    font-size: 4rem;
+  }
+  #hero-section p {
+    font-size: 2rem;
+  }
+}
+
+.hotel-section-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 0 0 10px 0;
+}
+.hotel-section-wrapper div img {
+  width: 100%;
+  height: auto;
+}
+.hotel-section-wrapper div p {
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 2px #222;
+}
+@media screen and (min-width: 768px) {
+  .hotel-section-wrapper img {
+    max-width: 50vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hotel-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+#section-hotel h2 {
+  text-align: center;
+  color: #34C6DD;
+  text-transform: uppercase;
+}
+#section-hotel a {
+  text-decoration: none;
+  color: royalblue;
+}
+#section-hotel a:hover {
+  text-decoration: underline;
+}
+
+#section-bedrooms {
+  background-color: rgba(52, 198, 221, 0.2);
+}
+#section-bedrooms > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#section-bedrooms h2 {
+  flex-basis: 100%;
+  text-align: center;
+  color: #34C6DD;
+  text-transform: uppercase;
+}
+#section-bedrooms article {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+#section-bedrooms article figure {
+  margin: 0;
+}
+#section-bedrooms article figure figcaption {
+  color: #E11F8F;
+  text-align: center;
+}
+#section-bedrooms article img {
+  width: 100%;
+  height: auto;
+}
+#section-bedrooms article h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+#section-bedrooms article p {
+  text-align: justify;
+}
+#section-bedrooms article p span {
+  font-style: italic;
+}
+#section-bedrooms article div {
+  margin-top: auto;
+  background-color: #E11F8F;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  color: white;
+  height: 30px;
+  box-sizing: border-box;
+  line-height: 30px;
+  text-align: center;
+  transition: 0.5s;
+}
+#section-bedrooms article div:hover {
+  color: #E11F8F;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  #section-bedrooms article {
+    flex-basis: 48%;
+    margin: 0 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #section-bedrooms article {
+    flex-basis: 23%;
+    margin: 0 5px;
+  }
+}
+
+#section-visit {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+#section-visit h2, #section-visit p {
+  flex-basis: 100%;
+}
+#section-visit article {
+  flex-basis: 100%;
+}
+#section-visit article h3 {
+  font-size: 1rem;
+}
+#section-visit article img {
+  width: 100%;
+  height: auto;
+}
+#section-visit article div {
+  margin-top: auto;
+  background-color: #E11F8F;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  color: white;
+  height: 30px;
+  box-sizing: border-box;
+  line-height: 30px;
+  text-align: center;
+  transition: 0.5s;
+}
+#section-visit article div a {
+  text-decoration: none;
+  color: white;
+}
+#section-visit article div:hover {
+  background-color: white;
+}
+#section-visit article div:hover > a {
+  color: #E11F8F;
+}
+@media screen and (min-width: 768px) {
+  #section-visit article {
+    flex-basis: 48%;
+    margin: 0 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #section-visit article {
+    flex-basis: 23%;
+    margin: 0 5px;
+  }
+}
+
+#page-environs .banner {
+  background-image: url("../medias/img/banner-riu-hotel.jpg");
+  height: 40vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+#page-environs > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#page-environs > div div {
+  margin: 20px 0;
+}
+#page-environs > div a {
+  text-decoration: none;
+  color: royalblue;
+}
+#page-environs > div a:hover {
+  text-decoration: underline;
+}
+#page-environs > div h1 {
+  text-align: center;
+  color: #E11F8F;
+}
+#page-environs > div > p {
+  text-align: center;
+}
+#page-environs > div article {
+  border-top: 1px solid #777;
+  padding: 10px 0;
+}
+#page-environs > div article img {
+  width: 100%;
+  height: auto;
+}
+#page-environs > div article .clear {
+  clear: both;
+}
+#page-environs > div article h2 {
+  text-align: center;
+}
+#page-environs > div article p {
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  #page-environs > div article img {
+    width: 50%;
+    float: left;
+  }
+  #page-environs > div article h2 {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #page-environs > div article img {
+    width: 30%;
+    margin-right: 10px;
+  }
+}
+
+.page-contact > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-contact h1 {
+  color: #E11F8F;
+}
+.page-contact section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.page-contact section #required-field {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.page-contact section span {
+  color: red;
+}
+.page-contact section form {
+  width: 100%;
+}
+.page-contact section form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.page-contact section form .form-row input, .page-contact section form .form-row select {
+  height: 40px;
+}
+.page-contact section form .form-row input, .page-contact section form .form-row textarea, .page-contact section form .form-row select {
+  border: 1px solid #aaa;
+  background-color: white;
+}
+.page-contact section form fieldset {
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.page-contact section form input[type=submit] {
+  background-color: #34C6DD;
+  color: white;
+  border: none;
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.page-contact section form div {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .page-contact section form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-contact section form fieldset {
+    flex-basis: 45%;
+  }
+  .page-contact section form .btnSubmit {
+    margin-top: 15px;
+    flex-basis: 98%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page-contact section form fieldset {
+    flex-basis: 48%;
+  }
+}
+.page-contact section address {
+  display: flex;
+  flex-direction: column;
+}
+.page-contact section address .fa-solid {
+  color: black;
+}
+.page-contact section address a {
+  text-decoration: none;
+  color: royalblue;
+}
+.page-contact section address a:hover {
+  text-decoration: underline;
+}
+.page-contact section iframe {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

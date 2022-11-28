@@ -1,0 +1,46 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container-xl {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: $primaryColor;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+main {
+    section {
+        padding: 2em 0;
+    }
+}
+
+.fa-solid, .fa-brands {
+    color: white;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riu Plaza</title>
+    <meta name="description" content="Hotel Riu Plaza - Nous contacter">
+    <link rel="shortcut icon" href="medias/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar container">
+              <a class="navbar-brand" href="index.html"><img src="medias/img/logo.svg" alt="Hello World"><p>Riu Plaza</p></a>
+              <button id="navbar-toggle" type="button">
+                <i class="fa-solid fa-bars fa-lg"></i>
+              </button>
+              <div id="navbar-collapse">
+                <a href="index.html#hotel">Notre hôtel</a>
+                <a href="index.html#bedrooms">Nos chambres</a>
+                <a href="environs.html">À visiter</a>
+                <a href="contact.html">Nous contacter</a>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page-contact">
+        <img src="medias/img/banner-riu-hotel.jpg" alt="">
+        <div class="container-xl">
+            <h1>NOUS CONTACTER</h1>
+            <section>
+                <h2>Formulaire de contact</h2>
+                <div id="required-field"><p><span class="required-sign">(*)</span> Champs obligatoires</p></div>
+                <form action="post">
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <div class="form-row">
+                            <label for="lastname">Nom <span class="required-sign">(*)</span></label>
+                            <input type="text" id="lastname" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="firstname">Prénom <span class="required-sign">(*)</span></label>
+                            <input type="text" id="firstname" placeholder="Votre prénom" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="mail">Email <span class="required-sign">(*)</span></label>
+                            <input type="email" id="mail" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Téléphone <span class="required-sign">(*)</span></label>
+                            <input type="tel" id="phone" placeholder="Votre numéro de téléphone" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Vos souhaits</legend>
+                        <div class="form-row">
+                            <label for="bedroom">La chambre <span class="required-sign">(*)</span></label>
+                            <select id="bedroom" required>
+                            <option value="">-- Choississez votre chambre --</option>
+                            <option value="">Chambre classique</option>
+                            <option value="">Chambre supérieure</option>
+                            <option value="">Chambre vue sur la mer</option>
+                            <option value="">Suite</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label>Vos dates <span class="required-sign">(*)</span></label>
+                            <input type="date" id="date-from" required>
+                            <span>-</span>
+                            <input type="date" id="date-to" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="btnSubmit">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </section>
+            <section>
+                <h2>Nos coordonnées</h2>
+                <address>
+                    <a href="https://goo.gl/maps/2XDuQ2FuteyUKYY99"><i class="fa-solid fa-location-dot"></i> 3101 Collins Avenue, Miami Beach, FL</a>
+                    <a href="tel:+13056735333"><i class="fa-solid fa-phone"></i> +1 305-673-5333</a>
+                    <a href="mailto:reservation@riuplazamiamibeach.com"><i class="fa-solid fa-envelope"></i> reservation@riuplazamiamibeach.com</a>
+                </address>
+                <h3>Plan d'accès</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.9047340528195!2d-80.1237319!3d25.806716800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b366e6da20b3%3A0x12196bc4368a6804!2s3101%20Collins%20Ave%2C%20Miami%2C%20FL%2033140%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1669631300368!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <article>
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="">Notre hôtel</a></li>
+                        <li><a href="">Nos chambres</a></li>
+                        <li><a href="">À visiter</a></li>
+                        <li><a href="">Nous contacter</a></li>
+                        <li><a href="">Mentions légales</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h4>Nos coordonnées</h4>
+                    <address>
+                        <a href="https://goo.gl/maps/2XDuQ2FuteyUKYY99"><i class="fa-solid fa-location-dot"></i> 3101 Collins Avenue, Miami Beach, FL</a>
+                        <a href="tel:+13056735333"><i class="fa-solid fa-phone"></i> +1 305-673-5333</a>
+                        <a href="mailto:reservation@riuplazamiamibeach.com"><i class="fa-solid fa-envelope"></i> reservation@riuplazamiamibeach.com</a>
+                    </address>
+                </article>
+                <article>
+                    <h4>Restons connectés</h4>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 - Exercice pratique par CHristiane Dumont</p>
+            <div>
+                <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

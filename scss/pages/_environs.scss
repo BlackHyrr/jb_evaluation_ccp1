@@ -1,0 +1,74 @@
+#page-environs {
+    .banner {
+        background-image: url('../medias/img/banner-riu-hotel.jpg');
+        height: 40vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    &>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        div {
+            margin: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            color: $linkColor;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: $secondaryColor;
+        }
+    
+        & > p {
+            text-align: center;
+        }
+        article {
+            border-top: 1px solid #777;
+            padding: 10px 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .clear {
+                clear: both;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            @media screen and (min-width: 768px) {
+                img {
+                    width: 50%;
+                    float: left;
+                }
+                h2 {
+                    text-align: start;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                img {
+                    width: 30%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+

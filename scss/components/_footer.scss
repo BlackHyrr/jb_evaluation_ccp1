@@ -1,0 +1,67 @@
+footer {
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        list-style: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .footer-top {
+        padding: 20px 0;
+        background-color: $primaryColor;
+
+        address {
+            display: flex;
+            flex-direction: column;
+        }
+        article:last-child {
+            .fa-brands, .fa-solid {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .container {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+    }
+
+    .footer-bottom {
+        background-color: #777;
+        position: relative;
+        height: 80px;
+        div {
+            background-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 2%;
+            bottom: 4%;
+            a {
+                height: 100%;
+                display: block;
+                position: relative;
+                .fa-solid {
+                    position: absolute;
+                    top: 31%;
+                    left: 31%;
+                    color: #777;
+                }
+            }
+        }
+        p {
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+}

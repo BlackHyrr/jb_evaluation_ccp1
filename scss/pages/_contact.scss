@@ -1,0 +1,112 @@
+.page-contact {
+    &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        color: $secondaryColor;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        #required-field {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        span {
+            color:red;
+        }
+
+        form {
+            width: 100%;
+
+            .form-row {
+                display: flex;
+                flex-direction: column;
+                margin: 5px 0;
+    
+                input, select {
+                    height: 40px;
+                }
+                input, textarea, select {
+                    border: 1px solid #aaa;
+                    background-color: white;
+                }
+            }
+    
+            fieldset {
+                width: 100%;
+                border-radius: 10px;
+                padding: 5px;
+                margin-bottom: 20px;
+            }
+
+    
+            input[type=submit] {
+                background-color: $primaryColor;
+                color: white;
+                border: none;
+                width: 50%;
+                height: 30px;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                fieldset {
+                    flex-basis: 45%;
+                }
+                .btnSubmit {
+                    margin-top: 15px;
+                    flex-basis: 98%;
+                }
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            form {
+                fieldset {
+                    flex-basis: 48%;
+                }
+            }
+        }
+        address {
+            display: flex;
+            flex-direction: column;
+
+            .fa-solid {
+                color:black;
+            }
+
+            a {
+                text-decoration: none;
+                color: $linkColor;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+    }
+}
